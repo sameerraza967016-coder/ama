@@ -604,3 +604,249 @@ a{
     color: white;
     font-size: 30px;
 }
+body{
+    margin: 0px;
+    padding: 0;
+}
+/* =========================
+   RESPONSIVE - LAPTOP + MOBILE
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* PRODUCTS */
+
+.sellpicture2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.box {
+    flex: 1 1 220px;
+    max-width: 300px;
+}
+
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+}
+
+
+/* LAPTOP / TABLET */
+
+@media (max-width: 1000px) {
+
+    .search {
+        width: 100%;
+    }
+
+    .sellpicture {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3,
+    .pic4,
+    .pic5 {
+        width: 48%;
+        height: auto;
+    }
+
+    .food {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .food11,
+    .food12,
+    .food13,
+    .food14,
+    .food21,
+    .food22,
+    .food23,
+    .food24,
+    .food31,
+    .food32,
+    .food33,
+    .food34 {
+        width: 48%;
+        height: auto;
+    }
+
+    .logo0 {
+        margin-left: 0;
+    }
+
+    #tech {
+        margin-left: 0;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+
+    /* NAVBAR */
+
+    .navbaar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .amazonelogo {
+        width: 50%;
+    }
+
+    .location {
+        width: 50%;
+    }
+
+    .searchbar {
+        width: 100%;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+
+    /* SECOND NAVBAR */
+
+    .navbaar2 {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* TOP PRODUCTS */
+
+    .sellpicture {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .pic1,
+    .pic2,
+    .pic3,
+    .pic4,
+    .pic5 {
+        width: calc(50% - 5px);
+        height: auto;
+    }
+
+
+    /* MAIN PRODUCTS */
+
+    .sellpicture2 {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .box {
+        width: calc(50% - 5px);
+        flex: 0 0 calc(50% - 5px);
+        max-width: none;
+        height: auto;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* FOOD */
+
+    .food {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .food11,
+    .food12,
+    .food13,
+    .food14,
+    .food21,
+    .food22,
+    .food23,
+    .food24,
+    .food31,
+    .food32,
+    .food33,
+    .food34 {
+        width: calc(50% - 5px);
+        height: auto;
+        margin: 0;
+    }
+
+
+    /* LARGE MARGINS REMOVE */
+
+    .logo0 {
+        margin-left: 0;
+    }
+
+    #tech {
+        margin-left: 0;
+    }
+
+
+    /* FOOTER */
+
+    .last,
+    .last1,
+    .last2,
+    .sign,
+    .foter1,
+    .foter2,
+    .foter3 {
+        width: 100%;
+        height: auto;
+    }
+
+    .foter3 {
+        font-size: 18px;
+    }
+}
