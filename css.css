@@ -4,6 +4,7 @@
     margin-top: 0%;
 
 }
+@media (max-width:600px)
 .navbaar
 {
     background-color:black;
@@ -604,249 +605,880 @@ a{
     color: white;
     font-size: 30px;
 }
-body{
-    margin: 0px;
-    padding: 0;
-}
-/* =========================
-   RESPONSIVE - LAPTOP + MOBILE
-   ========================= */
 
+/* ================= RESPONSIVE ARRANGEMENT ================= */
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+html, body {
     width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
+img, video {
+    max-width: 100%;
+    height: auto;
+}
 
-/* PRODUCTS */
-
-.sellpicture2 {
+/* Laptop / desktop */
+.navbaar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    min-height: 52px;
+    gap: 6px;
+    padding: 4px 8px;
+}
+
+.searchbar {
+    display: none;
+}
+
+.search {
+    flex: 1 1 220px;
+    min-width: 100px;
+    width: auto;
+}
+
+.all {
+    margin-left: 0;
+    flex: 0 0 60px;
+}
+
+.button {
+    flex: 0 0 40px;
+}
+
+.language {
+    flex: 0 0 58px;
+}
+
+.location, .hello, .return, .cartlogo {
+    margin-left: 6px;
+}
+
+.navbaar2 {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.sellpicture {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px;
+    height: auto;
+    padding: 12px;
+}
+
+.pic1, .pic2, .pic3, .pic4, .pic5 {
+    width: 100%;
+    min-width: 0;
+    height: 320px;
+    margin-left: 0;
+    background-position: center;
+}
+
+.sellpicture2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+    padding: 0 12px;
 }
 
 .box {
-    flex: 1 1 220px;
-    max-width: 300px;
+    min-width: 0;
 }
 
-
-/* IMAGES */
-
-img {
-    max-width: 100%;
+.first1, .first2 {
+    display: flex;
+    gap: 12px;
+    margin: 12px 0;
 }
 
+.pic41, .pic42, .pic43, .pic44 {
+    width: calc(50% - 6px);
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin-left: 0;
+    background-position: center;
+}
 
-/* LAPTOP / TABLET */
+.food {
+    width: 100%;
+    height: auto;
+}
 
-@media (max-width: 1000px) {
+.food1 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    height: auto;
+    margin: 24px 12px;
+}
 
-    .search {
-        width: 100%;
-    }
+.food11, .food12, .food13, .food14,
+.food21, .food22, .food23, .food24,
+.food31, .food32, .food33, .food34 {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    margin-left: 0;
+    background-position: center;
+}
 
+.foter1, .foter2, .foter3 {
+    height: auto;
+    padding: 24px 12px;
+}
+
+#tab2 {
+    height: auto;
+    min-height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+}
+
+.logo0, .lan {
+    margin: 8px;
+}
+
+#tech {
+    margin: 12px;
+    flex: 1 1 180px;
+}
+
+a {
+    margin-left: 12px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
     .sellpicture {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
-    .pic1,
-    .pic2,
-    .pic3,
-    .pic4,
-    .pic5 {
-        width: 48%;
-        height: auto;
+    .sellpicture2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .food {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+    .food1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .food11,
-    .food12,
-    .food13,
-    .food14,
-    .food21,
-    .food22,
-    .food23,
-    .food24,
-    .food31,
-    .food32,
-    .food33,
-    .food34 {
-        width: 48%;
-        height: auto;
+    .pic1, .pic2, .pic3, .pic4, .pic5 {
+        height: 280px;
     }
 
-    .logo0 {
-        margin-left: 0;
-    }
-
-    #tech {
-        margin-left: 0;
+    .foter1 {
+        overflow-wrap: anywhere;
     }
 }
 
-
-/* MOBILE */
-
+/* Mobile phone */
 @media (max-width: 600px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-
-    /* NAVBAR */
-
     .navbaar {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+        gap: 6px;
+        padding: 6px;
     }
 
     .amazonelogo {
-        width: 50%;
+        width: 82px;
+        height: 42px;
+        flex: 0 0 82px;
     }
 
     .location {
-        width: 50%;
+        font-size: 12px;
+        margin-left: 0;
     }
 
-    .searchbar {
-        width: 100%;
+    .delevering, .india {
+        font-size: 12px;
+    }
+
+    .all {
+        height: 36px;
+        width: 48px;
+        flex-basis: 48px;
     }
 
     .search {
-        width: 100%;
+        flex: 1 1 150px;
+        width: auto;
+        height: 36px;
+        min-width: 0;
     }
 
+    .button {
+        height: 38px;
+        flex-basis: 38px;
+        margin-top: 0;
+    }
 
-    /* SECOND NAVBAR */
+    .language {
+        height: 34px;
+        width: 52px;
+        flex-basis: 52px;
+    }
+
+    .hello, .return {
+        font-size: 11px;
+        margin-left: 2px;
+    }
+
+    .order {
+        font-size: 14px;
+    }
+
+    .cartlogo {
+        width: 54px;
+        height: 42px;
+        margin-left: 2px;
+        flex: 0 0 54px;
+    }
 
     .navbaar2 {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+        height: 38px;
+        gap: 8px;
     }
 
-
-    /* TOP PRODUCTS */
+    .navbaar2 > div {
+        flex: 0 0 auto;
+        margin-left: 6px;
+    }
 
     .sellpicture {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
+        padding: 10px;
     }
 
-    .pic1,
-    .pic2,
-    .pic3,
-    .pic4,
-    .pic5 {
-        width: calc(50% - 5px);
-        height: auto;
+    .pic1, .pic2, .pic3, .pic4, .pic5 {
+        height: 220px;
+        font-size: 15px;
+        border-radius: 8px;
     }
 
+    .under, .months {
+        font-size: 18px;
+        margin-left: 6px;
+    }
 
-    /* MAIN PRODUCTS */
+    .Beauty {
+        font-size: 15px;
+    }
 
     .sellpicture2 {
-        width: 100%;
-        height: auto;
-        margin-top: 20px;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr;
         gap: 10px;
+        padding: 0 10px;
     }
 
-    .box {
-        width: calc(50% - 5px);
-        flex: 0 0 calc(50% - 5px);
-        max-width: none;
-        height: auto;
-    }
-
-    .box img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    /* FOOD */
-
-    .food {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
+    .first1, .first2 {
         gap: 10px;
+        margin: 10px 0;
     }
 
-    .food11,
-    .food12,
-    .food13,
-    .food14,
-    .food21,
-    .food22,
-    .food23,
-    .food24,
-    .food31,
-    .food32,
-    .food33,
-    .food34 {
+    .pic41, .pic42, .pic43, .pic44 {
         width: calc(50% - 5px);
         height: auto;
-        margin: 0;
+        aspect-ratio: 1 / 1;
     }
 
+    .last1 {
+        height: auto;
+        padding: 24px 12px;
+        font-size: 24px;
+    }
 
-    /* LARGE MARGINS REMOVE */
+    .last {
+        height: 180px;
+        background-position: center;
+    }
+
+    .food1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin: 18px 10px;
+    }
+
+    .sign {
+        height: auto;
+        padding: 20px 10px;
+        font-size: 22px;
+    }
+
+    #button {
+        max-width: 90%;
+        width: 220px;
+        font-size: 20px;
+    }
+
+    .foter1 {
+        font-size: 13px;
+        padding: 20px 10px;
+    }
+
+    .foter1 a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .foter2 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        font-size: 15px;
+    }
+
+    .foter3 {
+        font-size: 17px;
+        text-align: center;
+        overflow-wrap: anywhere;
+    }
 
     .logo0 {
-        margin-left: 0;
+        margin: 8px;
+    }
+
+    .lan {
+        margin: 8px;
+        width: 130px;
     }
 
     #tech {
+        flex: 1 1 130px;
+        margin: 8px;
+        font-size: 14px;
+    }
+}
+
+
+/* ===== NAVBAR, PRODUCT PICTURES AND FOOTER: FINAL RESPONSIVE FIX ===== */
+
+/* Navbar */
+.navbaar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+    min-height: 60px;
+    height: auto;
+}
+
+.navbaar2 {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: thin;
+}
+
+.navbaar2 > div {
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+
+/* Main picture cards */
+.sellpicture {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 14px;
+    height: auto;
+    width: 100%;
+    padding: 14px;
+}
+
+.sellpicture > div {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Product picture groups */
+.sellpicture2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    margin: 24px 0;
+    padding: 0 14px;
+}
+
+.sellpicture2 .box {
+    min-width: 0;
+    width: 100%;
+}
+
+.sellpicture2 .first1,
+.sellpicture2 .first2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.sellpicture2 .pic41,
+.sellpicture2 .pic42,
+.sellpicture2 .pic43,
+.sellpicture2 .pic44 {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Food picture cards */
+.food {
+    width: 100%;
+    height: auto;
+}
+
+.food1 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    width: 100%;
+    height: auto;
+    margin: 24px 0;
+    padding: 0 14px;
+}
+
+.food1 > div {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Footer sections */
+.foter1 {
+    height: auto;
+    padding: 28px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 14px;
+    line-height: 1.7;
+}
+
+.foter1 a {
+    margin: 6px 10px;
+}
+
+#tab {
+    height: auto;
+    min-height: 48px;
+    padding: 12px;
+}
+
+#tab2 {
+    height: auto;
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 16px;
+}
+
+.logo0,
+.lan {
+    margin: 8px;
+}
+
+.foter2 {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 22px;
+    padding: 24px 16px;
+}
+
+#tech {
+    flex: 1 1 180px;
+    margin: 8px;
+    text-align: center;
+}
+
+.foter3 {
+    height: auto;
+    padding: 22px 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .sellpicture {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .sellpicture2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .food1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pic1, .pic2, .pic3, .pic4, .pic5 {
+        height: 270px;
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    .navbaar {
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .amazonelogo {
+        width: 76px;
+        flex: 0 0 76px;
+    }
+
+    .location {
+        margin-left: 0;
+        font-size: 11px;
+    }
+
+    .search {
+        flex: 1 1 120px;
+        min-width: 0;
+    }
+
+    .hello, .return {
+        margin-left: 2px;
+        font-size: 11px;
+    }
+
+    .cartlogo {
+        width: 48px;
+        flex: 0 0 48px;
         margin-left: 0;
     }
 
+    .sellpicture {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 10px;
+    }
 
-    /* FOOTER */
+    .pic1, .pic2, .pic3, .pic4, .pic5 {
+        height: 210px;
+        font-size: 14px;
+    }
 
-    .last,
-    .last1,
-    .last2,
-    .sign,
-    .foter1,
-    .foter2,
-    .foter3 {
-        width: 100%;
-        height: auto;
+    .sellpicture2 {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .sellpicture2 .box {
+        padding: 8px;
+    }
+
+    .food1 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .foter1 {
+        display: block;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 13px;
+    }
+
+    .foter1 a {
+        display: inline-block;
+        margin: 8px 6px;
+    }
+
+    .foter2 {
+        justify-content: center;
+        text-align: center;
+        gap: 16px;
+        padding: 20px 10px;
+    }
+
+    #tech {
+        flex: 1 1 130px;
+        font-size: 13px;
     }
 
     .foter3 {
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+
+/* ===== POLISHED AMAZON-STYLE TOP NAVBAR ===== */
+.navbaar {
+    background: #131921;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding: 8px 12px;
+    min-height: 70px;
+    height: auto;
+    width: 100%;
+}
+
+.amazonelogo {
+    flex: 0 0 105px;
+    width: 105px;
+    height: 48px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.location {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 6px 8px;
+    line-height: 1.25;
+    font-size: 13px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.location .delevering {
+    color: #c6c6c6;
+    font-size: 11px;
+}
+
+.location .india {
+    display: inline;
+    font-weight: 700;
+}
+
+.all {
+    flex: 0 0 58px;
+    width: 58px;
+    height: 40px;
+    margin: 0;
+    border: 0;
+    border-radius: 5px 0 0 5px;
+    background: #e6e6e6;
+    color: #222;
+}
+
+.search {
+    flex: 1 1 180px;
+    min-width: 80px;
+    width: auto;
+    height: 40px;
+    margin: 0;
+    padding: 0 12px;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+}
+
+.button {
+    flex: 0 0 46px;
+    width: 46px;
+    height: 40px;
+    margin: 0;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    background: #febd69;
+    color: #111;
+    font-size: 19px;
+}
+
+.language {
+    flex: 0 0 62px;
+    width: 62px;
+    height: 38px;
+    margin: 0;
+    border: 0;
+    border-radius: 4px;
+}
+
+.hello, .return {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 6px 8px;
+    font-size: 12px;
+    line-height: 1.3;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.hello p:first-child, .return p:first-child {
+    font-size: 11px;
+    color: #ddd;
+}
+
+.hello p:last-child, .return .order {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.cartlogo {
+    flex: 0 0 72px;
+    width: 72px;
+    height: 48px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.amazonelogo:hover, .location:hover, .hello:hover,
+.return:hover, .cartlogo:hover {
+    border-color: #fff;
+}
+
+.navbaar2 {
+    background: #232f3e;
+    min-height: 40px;
+    height: auto;
+    padding: 4px 8px;
+    align-items: center;
+}
+
+.navbaar2 > div {
+    display: flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin-left: 2px;
+}
+
+.navbaar2 > div:hover {
+    border-color: #fff;
+}
+
+/* Compact top bar on phones */
+@media (max-width: 600px) {
+    .navbaar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas:
+            "logo location cart"
+            "all search search"
+            "language hello return";
+        gap: 7px;
+        padding: 8px;
+        min-height: 0;
+    }
+
+    .amazonelogo {
+        grid-area: logo;
+        width: 82px;
+        height: 42px;
+        flex-basis: auto;
+    }
+
+    .location {
+        grid-area: location;
+        justify-self: start;
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+
+    .cartlogo {
+        grid-area: cart;
+        width: 52px;
+        height: 42px;
+        flex-basis: auto;
+    }
+
+    .all {
+        grid-area: all;
+        width: 54px;
+        flex-basis: auto;
+        height: 38px;
+    }
+
+    .search {
+        grid-area: search;
+        width: 100%;
+        min-width: 0;
+        height: 38px;
+        flex-basis: auto;
+        border-radius: 0 5px 5px 0;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .language {
+        grid-area: language;
+        width: 60px;
+        flex-basis: auto;
+        height: 32px;
+    }
+
+    .hello {
+        grid-area: hello;
+        justify-self: center;
+        font-size: 11px;
+    }
+
+    .return {
+        grid-area: return;
+        justify-self: end;
+        font-size: 11px;
+    }
+
+    .navbaar2 {
+        min-height: 38px;
+        padding: 4px;
+    }
+
+    .navbaar2 > div {
+        min-height: 28px;
+        padding: 4px 7px;
+        font-size: 12px;
     }
 }
